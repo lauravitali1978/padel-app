@@ -28,11 +28,20 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <header class="container text-center my-5">
-        <h1 class="display-5 fw-bold">Prenota il tuo campo da Padel</h1>
-        <p class="lead">Scegli tra 6 campi disponibili e prenota il tuo slot!</p>
-    </header>
+    <!-- Hero con immagine -->
+<section class="container-fluid p-0 mb-4">
+    <img src="{{ asset('images/campi/herosection.png') }}" 
+         alt="Banner PadelApp" 
+         class="img-fluid w-100 d-block" 
+         style="max-height: 650px; object-fit: cover;">
+</section>
+
+<!-- Testo introduttivo -->
+<header class="container text-center mb-5">
+    <h1 class="display-5 fw-bold">Prenota il tuo campo da Padel</h1>
+    <p class="lead">Scegli tra 6 campi disponibili e prenota il tuo slot!</p>
+</header>
+
 
     <!-- Call to Action (Campi) -->
     <section class="container mb-5">
@@ -51,6 +60,7 @@
             @endforeach
         </div>
     </section>
+    
 
     <!-- Bootstrap JS (opzionale) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

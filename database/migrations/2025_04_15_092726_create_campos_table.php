@@ -13,9 +13,10 @@ return new class extends Migration
 {
     Schema::create('campos', function (Blueprint $table) {
         $table->id();
-        $table->string('nome');
-        $table->string('foto'); // path immagine (es. campi/campo1.jpg)
-        $table->timestamps();
+    $table->string('nome');
+    $table->string('posizione'); // aggiunto!
+    $table->string('immagine_url')->nullable();
+    $table->timestamps();
     });
 }
 
