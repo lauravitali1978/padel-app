@@ -10,10 +10,10 @@ use App\Http\Controllers\Auth\RegisterController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/calendario/{id}', [PrenotazioneController::class, 'showCalendario'])->name('calendario.campo');
-// Questa rotta serve per il form di prenotazione
+// rotta per il form di prenotazione
 Route::get('/prenota/{id}', [PrenotazioneController::class, 'mostraFormPrenotazione'])->name('prenotazione.form');
 
-// Questa rotta serve per il submit del form di prenotazione
+// Questa rotta per il submit del form di prenotazione
 Route::post('/prenota/{id}', [PrenotazioneController::class, 'submitPrenotazione'])->name('prenotazione.submit');
 
 // Routes form registrazione e login 
